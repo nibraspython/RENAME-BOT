@@ -26,9 +26,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = int(os.environ.get("API_ID", "22141398"))
-    API_HASH = os.environ.get("API_HASH", "0c8f8bd171e05e42d6f6e5a6f4305389")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8069455485:AAErC0Q0epXTUFwwF8-J7urJ8AqEAYhxOSU")
+    API_ID = int(os.environ.get("API_ID", ""))
+    API_HASH = os.environ.get("API_HASH", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7685121222:AAGYoaW_D9dpslTWQFhFDaMBSeHjcGq0Avc")
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
@@ -37,9 +37,9 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/ad48ac09b1e6f30d2dae4.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7744665378').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002087228619") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "1002283877325"))
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6292143807').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002281964280") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002281964280"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "5")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
